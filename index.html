@@ -14,22 +14,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
   <header class="site-header" data-header>
     <nav class="nav container" aria-label="Основная навигация">
-      <a class="logo" href="#home" aria-label="MilinCloud — на главную">MilinCloud</a>
+      <a class="logo" href="#home" aria-label="MilinCloud — на главную">
+        <span class="logo__mark" aria-hidden="true">M</span>
+        <span>MilinCloud</span>
+      </a>
       <div class="nav__links" aria-label="Разделы сайта">
-        <a href="#home">Главная</a>
+        <a href="#home" aria-current="page">Главная</a>
         <a href="#features">Возможности</a>
         <a href="#infrastructure">Инфраструктура</a>
+        <a href="#operations">Подход</a>
         <a href="#status">Статус</a>
       </div>
       <a class="nav__button" href="#status">Проверить статус</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero section" id="home" aria-labelledby="hero-title">
       <div class="container hero__grid">
         <div class="hero__content reveal">
@@ -41,10 +47,17 @@
             <a class="button button--primary" href="#features">Узнать больше</a>
             <a class="button button--secondary" href="#status">Статус системы</a>
           </div>
+          <dl class="hero__badges" aria-label="Ключевые ориентиры MilinCloud">
+            <div><dt>Фокус</dt><dd>доступность</dd></div>
+            <div><dt>Подход</dt><dd>мониторинг</dd></div>
+            <div><dt>Архитектура</dt><dd>рост без спешки</dd></div>
+          </dl>
         </div>
 
         <div class="hero__visual reveal" aria-hidden="true">
           <div class="cloud-orbit">
+            <div class="orbital-ring orbital-ring--outer"></div>
+            <div class="orbital-ring orbital-ring--inner"></div>
             <span class="node node--one"></span>
             <span class="node node--two"></span>
             <span class="node node--three"></span>
@@ -75,6 +88,7 @@
         <div class="section__heading reveal">
           <p class="eyebrow">Возможности</p>
           <h2 id="features-title">Платформа для устойчивой работы сервисов</h2>
+          <p>Каждый элемент страницы подчёркивает спокойный корпоративный образ: меньше шума, больше понятной информации о технологической базе.</p>
         </div>
         <div class="cards">
           <article class="card reveal">
@@ -116,18 +130,48 @@
       </div>
     </section>
 
+    <section class="section operations" id="operations" aria-labelledby="operations-title">
+      <div class="container">
+        <div class="section__heading reveal">
+          <p class="eyebrow">Подход</p>
+          <h2 id="operations-title">Эксплуатация без лишнего риска</h2>
+          <p>MilinCloud развивается постепенно: сначала надёжная база, затем новые публичные возможности и расширение инфраструктурного контура.</p>
+        </div>
+        <div class="process" aria-label="Принципы эксплуатации">
+          <article class="process__item reveal">
+            <span>01</span>
+            <h3>Наблюдаемость</h3>
+            <p>Ключевые компоненты отслеживаются, чтобы быстрее замечать нестандартное поведение.</p>
+          </article>
+          <article class="process__item reveal">
+            <span>02</span>
+            <h3>Плановые обновления</h3>
+            <p>Компоненты поддерживаются в актуальном состоянии с аккуратным техническим обслуживанием.</p>
+          </article>
+          <article class="process__item reveal">
+            <span>03</span>
+            <h3>Запас для роста</h3>
+            <p>Архитектура оставляет пространство для расширения ресурсов без резких изменений.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="status" aria-labelledby="status-title">
       <div class="container status-grid">
         <div class="status-card reveal">
           <p class="eyebrow">Статус системы</p>
           <h2 id="status-title">Все системы работают нормально</h2>
+          <p class="status-summary">Статус носит информационный характер и не подключается к внешним источникам.</p>
           <ul class="status-list" aria-label="Текущий статус систем">
             <li><span class="status-dot"></span><span>Основная инфраструктура</span><strong>работает</strong></li>
             <li><span class="status-dot"></span><span>Веб-сервисы</span><strong>работают</strong></li>
             <li><span class="status-dot"></span><span>Системы мониторинга</span><strong>работают</strong></li>
           </ul>
+          <p class="status-updated">Обновлено: <time datetime="2026-07-18" data-status-date>18 июля 2026</time></p>
         </div>
         <aside class="notice reveal" aria-labelledby="notice-title">
+          <p class="eyebrow">Технические работы</p>
           <h2 id="notice-title">Проект находится в стадии развития</h2>
           <p>Некоторые публичные функции временно недоступны. Мы продолжаем работу над инфраструктурой и постепенно добавляем новые возможности.</p>
         </aside>
