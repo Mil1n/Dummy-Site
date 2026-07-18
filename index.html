@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MilinCloud — технологическая платформа для стабильной работы сетевых и облачных сервисов, серверной инфраструктуры и мониторинга.">
+  <meta property="og:title" content="MilinCloud — Надёжная цифровая инфраструктура">
+  <meta property="og:description" content="Современная облачная и сетевая инфраструктура с фокусом на производительность, безопасность и доступность сервисов.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="theme-color" content="#07111f">
+  <title>MilinCloud — Надёжная цифровая инфраструктура</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Основная навигация">
+      <a class="logo" href="#home" aria-label="MilinCloud — на главную">MilinCloud</a>
+      <div class="nav__links" aria-label="Разделы сайта">
+        <a href="#home">Главная</a>
+        <a href="#features">Возможности</a>
+        <a href="#infrastructure">Инфраструктура</a>
+        <a href="#status">Статус</a>
+      </div>
+      <a class="nav__button" href="#status">Проверить статус</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Cloud infrastructure platform</p>
+          <h1 id="hero-title">Надёжная цифровая инфраструктура</h1>
+          <p class="hero__lead">Технологическая платформа для стабильной работы сетевых и облачных сервисов.</p>
+          <p class="hero__text">Мы разрабатываем и поддерживаем собственную серверную инфраструктуру, уделяя особое внимание производительности, безопасности и доступности сервисов.</p>
+          <div class="hero__actions" aria-label="Основные действия">
+            <a class="button button--primary" href="#features">Узнать больше</a>
+            <a class="button button--secondary" href="#status">Статус системы</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="cloud-orbit">
+            <span class="node node--one"></span>
+            <span class="node node--two"></span>
+            <span class="node node--three"></span>
+            <span class="node node--four"></span>
+            <svg class="network" viewBox="0 0 520 420" role="img">
+              <defs>
+                <linearGradient id="lineGradient" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#58c7ff" />
+                  <stop offset="1" stop-color="#9a7cff" />
+                </linearGradient>
+              </defs>
+              <path d="M92 282 C138 196 200 152 278 162 C356 172 410 228 438 112" />
+              <path d="M130 120 C190 210 288 246 412 292" />
+              <path d="M104 292 L222 322 L418 292 L392 126 L260 82 L130 120 Z" />
+            </svg>
+            <div class="server-stack">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section__heading reveal">
+          <p class="eyebrow">Возможности</p>
+          <h2 id="features-title">Платформа для устойчивой работы сервисов</h2>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon"></div>
+            <h3>Стабильная работа</h3>
+            <p>Инфраструктура проектируется с учётом высокой доступности и постоянного мониторинга.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon card__icon--violet"></div>
+            <h3>Современные технологии</h3>
+            <p>Используются актуальные программные решения и современные серверные платформы.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon card__icon--blue"></div>
+            <h3>Безопасность</h3>
+            <p>Регулярное обновление компонентов и контроль состояния инфраструктуры.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon card__icon--cyan"></div>
+            <h3>Масштабируемость</h3>
+            <p>Архитектура позволяет постепенно расширять ресурсы по мере развития проекта.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section infrastructure" id="infrastructure" aria-labelledby="infrastructure-title">
+      <div class="container infrastructure__grid">
+        <div class="reveal">
+          <p class="eyebrow">Инфраструктура</p>
+          <h2 id="infrastructure-title">Распределённая инфраструктура</h2>
+          <p>Сервисы MilinCloud размещаются на независимых серверных площадках. Это позволяет поддерживать стабильную работу системы и оперативно выполнять техническое обслуживание.</p>
+        </div>
+        <div class="metrics" aria-label="Показатели инфраструктуры">
+          <div class="metric reveal"><strong>99,9%</strong><span>целевая доступность</span></div>
+          <div class="metric reveal"><strong>24/7</strong><span>автоматический мониторинг</span></div>
+          <div class="metric reveal"><strong>Несколько регионов</strong><span>распределение ресурсов</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="status" aria-labelledby="status-title">
+      <div class="container status-grid">
+        <div class="status-card reveal">
+          <p class="eyebrow">Статус системы</p>
+          <h2 id="status-title">Все системы работают нормально</h2>
+          <ul class="status-list" aria-label="Текущий статус систем">
+            <li><span class="status-dot"></span><span>Основная инфраструктура</span><strong>работает</strong></li>
+            <li><span class="status-dot"></span><span>Веб-сервисы</span><strong>работают</strong></li>
+            <li><span class="status-dot"></span><span>Системы мониторинга</span><strong>работают</strong></li>
+          </ul>
+        </div>
+        <aside class="notice reveal" aria-labelledby="notice-title">
+          <h2 id="notice-title">Проект находится в стадии развития</h2>
+          <p>Некоторые публичные функции временно недоступны. Мы продолжаем работу над инфраструктурой и постепенно добавляем новые возможности.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 MilinCloud. Все права защищены.</p>
+      <p>Infrastructure and network technologies</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
